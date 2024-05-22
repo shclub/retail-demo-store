@@ -1,8 +1,12 @@
 name: run-integ-tests
 
-on:
-  workflow_dispatch: {}
-
+on:      
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "TAG"
+        required: true
+        default: "master"
 env:
   STACK_NAME: retaildemostore
   STAGE_S3_BUCKET: retail-demo-store-integ-test-assets
