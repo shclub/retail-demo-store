@@ -10,7 +10,7 @@ on:
 
 env:
   STACK_NAME: retaildemostore
-  STAGE_S3_BUCKET: edu_frontend
+  STAGE_S3_BUCKET: edu-frontend
   REGION: ap-northeast-2
 
 jobs:
