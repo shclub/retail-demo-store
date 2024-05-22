@@ -1,9 +1,13 @@
 name: Ruff
-on:
-  pull_request:
-  push:
-    branches:
-      - master
+
+on:      
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "TAG"
+        required: true
+        default: "master"
+        
 jobs:
   ruff:
     runs-on: ubuntu-latest
